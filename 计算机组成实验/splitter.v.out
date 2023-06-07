@@ -1,0 +1,43 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fcba67070a0 .scope module, "splitter" "splitter" 2 3;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "A";
+    .port_info 1 /OUTPUT 8 "O1";
+    .port_info 2 /OUTPUT 8 "O2";
+    .port_info 3 /OUTPUT 8 "O3";
+    .port_info 4 /OUTPUT 8 "O4";
+L_0x7fcba671c3b0 .functor NOT 8, L_0x7fcba671c2d0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0x7fcba671c530 .functor NOT 8, L_0x7fcba671c460, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0x7fcba671c700 .functor NOT 8, L_0x7fcba671c5e0, C4<00000000>, C4<00000000>, C4<00000000>;
+o0x7fcba8040008 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x7fcba670a410_0 .net "A", 31 0, o0x7fcba8040008;  0 drivers
+v0x7fcba671b810_0 .net "O1", 7 0, L_0x7fcba671c170;  1 drivers
+v0x7fcba671b8b0_0 .net "O2", 7 0, L_0x7fcba671c3b0;  1 drivers
+v0x7fcba671b960_0 .net "O3", 7 0, L_0x7fcba671c530;  1 drivers
+v0x7fcba671ba10_0 .net "O4", 7 0, L_0x7fcba671c700;  1 drivers
+v0x7fcba671bb00_0 .net *"_ivl_1", 7 0, L_0x7fcba671bff0;  1 drivers
+v0x7fcba671bbb0_0 .net *"_ivl_13", 7 0, L_0x7fcba671c460;  1 drivers
+v0x7fcba671bc60_0 .net *"_ivl_17", 7 0, L_0x7fcba671c5e0;  1 drivers
+v0x7fcba671bd10_0 .net *"_ivl_3", 0 0, L_0x7fcba671c090;  1 drivers
+L_0x7fcba8078008 .functor BUFT 1, C4<0000000>, C4<0>, C4<0>, C4<0>;
+v0x7fcba671be20_0 .net *"_ivl_7", 6 0, L_0x7fcba8078008;  1 drivers
+v0x7fcba671bec0_0 .net *"_ivl_9", 7 0, L_0x7fcba671c2d0;  1 drivers
+L_0x7fcba671bff0 .part o0x7fcba8040008, 24, 8;
+L_0x7fcba671c090 .reduce/xor L_0x7fcba671bff0;
+L_0x7fcba671c170 .concat [ 1 7 0 0], L_0x7fcba671c090, L_0x7fcba8078008;
+L_0x7fcba671c2d0 .part o0x7fcba8040008, 16, 8;
+L_0x7fcba671c460 .part o0x7fcba8040008, 8, 8;
+L_0x7fcba671c5e0 .part o0x7fcba8040008, 0, 8;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "splitter.v";
