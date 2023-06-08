@@ -1,0 +1,20 @@
+{
+    "1": [
+        "-ask2checkOut(guestName:String,roomId:int):void",
+        "+checkOut(roomId:int):void",
+        "-workerName:String",
+        "Dispatcher",
+        "finishClean",
+        "cleanRoom"
+    ],
+    "2": [
+        "DIS_REC_CHECKIN_FAILED,",
+        "replyCheckOut(request);",
+        " arrangeClean4CheckOut(request);",
+        "private void arrangeCleanOnly(Request request) {",
+        "RoomState.SPARE",
+        "if (request.getRequestTag().equals(RequestTag.DIS_CLE_CLEAN_CHECKOUT)) {"
+    ],
+    "3": "对我而言高内聚就是一个类具有明确和集中的职责，其方法和变量更易于理解，修改和维护,低耦合对我而言就是对其他类的依赖性最小，对一个类更改不会影响其他类的行为。"
+
+}
