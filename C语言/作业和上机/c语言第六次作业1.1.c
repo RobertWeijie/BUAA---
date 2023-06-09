@@ -1,0 +1,1 @@
+#include<stdio.h>int main(){ int a[100],i,count1=0,count2=0,countb=0,b,n; scanf("%d %d",&b,&n); for(i=0;i<n;i++) {  scanf("%d",&a[i]);  if(a[i]==b)  {   countb++;  }  else if(a[i]>b)  {   count1++;  }  else  {   count2++;  }  } printf("%d %d %d\n",countb,count2,count1);}
