@@ -1,0 +1,26 @@
+{
+    "1": [
+        "Bottle",
+        "beUsed",
+        "泛化",
+        "Equipment"
+
+    ],
+    "2": "构造",
+    "3": ["Knapsack", "getKnapsack", "entry"],
+    "4": ["CommodityManager", "Knapsack", "isFull"],
+    "5": ["CommodityManager", "Knapsack", "关联"],
+    "6": "getKnapsack",
+    "7": [
+        "10",
+        "canAdd==0&&trying<=10",
+        "canAdd==0&&trying>9 ",
+        "trying to add",
+        "trying to add"
+    ],
+    "8": [
+        "关联",
+        "equipmentList",
+        "Vector<Integer>"
+    ]
+}
